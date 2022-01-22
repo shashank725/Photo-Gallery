@@ -1,0 +1,6 @@
+# Virtual env
+venv/
+
+# pycache
+main/__pycache__
+photo_gallery/__pycache__
