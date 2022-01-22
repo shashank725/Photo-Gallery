@@ -6,4 +6,4 @@ from .models import gallery
 class galleryForm(forms.ModelForm):
     class Meta:
         model = gallery
-        field = '__all__'
+        fields = '__all__'
