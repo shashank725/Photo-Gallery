@@ -1,9 +1,8 @@
 from dataclasses import field
-from pyexpat import model
 from django import forms
-from .models import gallery
+from .models import Gallery
 
 class GalleryForm(forms.ModelForm):
     class Meta:
-        model = gallery
+        model = Gallery
         fields = '__all__'
