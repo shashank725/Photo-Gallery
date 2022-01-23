@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Gallery</title>
 </head>
 <body>
-    {% for picture in pictures %}
-    <div>
-        <img src = "{{ picture.picture.url }}" alt = "image">
+    <div class="screen-wrapper">
+        <div class="navbar">
+        </div>
+        <div class="gallery">
+            {% for picture in pictures %}
+            <div>
+                <img src = "{{ picture.picture.url }}" alt = "image">
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    {% endfor %}
     
 </body>
 </html>

@@ -9,7 +9,11 @@
 <body>
     <div class="screen-wrapper">
         <div>
-            <img src = "{{ pictures.picture.url }}" alt = "image">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
     </div>

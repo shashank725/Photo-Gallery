@@ -3,7 +3,7 @@ from pyexpat import model
 from django import forms
 from .models import gallery
 
-class galleryForm(forms.ModelForm):
+class GalleryForm(forms.ModelForm):
     class Meta:
         model = gallery
         fields = '__all__'
