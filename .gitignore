@@ -5,9 +5,14 @@ env/
 # pycache
 main/__pycache__
 photo_gallery/__pycache__
+migrations/__pycache__/
+
 
 # Database
 db.sqlite3
 
 # Media files
 media/
+
+# Migrations
+migrations/

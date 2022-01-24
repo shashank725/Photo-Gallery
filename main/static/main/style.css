@@ -1,0 +1,130 @@
+.screen-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.5)), url(istockphoto-1139549860-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar{
+    width: 97vw;
+    height: 9vh;
+    display: flex;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.712));
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.navbar ul{
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 15px 30px;
+    padding: 0 10px;
+}
+.navbar ul li a{
+    display: flex;
+    font-size: 21px;
+    color: white;
+    text-decoration: dashed;
+    padding: 5px 15px;
+    border: 3px solid white;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Homepage */
+.gallery-wrapper{
+    width: 100%;
+    min-height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px auto;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.5));
+}
+.gallery img{
+    margin: 10px;
+    border-radius: 10px;
+}
+.caption{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 10px;
+}
+.caption a{
+    color: white;
+    text-decoration: dashed;
+}
+
+
+/* Detail Page */
+.photo-wrapper{
+    max-width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.5));
+    margin: 30px auto;
+}
+.photo-wrapper img{
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 10px 30px;
+}
+.context h2{
+    display: flex;
+    justify-content: center;
+}
+.context p{
+    font-size: 18px;
+}
+.context h4{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Form Page */
+.form-wrapper{
+    max-width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.5));
+    margin: 40px auto;
+}
+.form-wrapper form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 10px 30px;
+}

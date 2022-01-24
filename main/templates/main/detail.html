@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
 </head>
 <body>
     <div class="screen-wrapper">
-        <div>
-            <img src = "{{ pictures.picture.url }}" alt = "image">
+        <div class="navbar">
+            <ul>
+                <li><a href="{% url 'main:homepage' %}">Home</a></li>
+                <li><a href="{% url 'main:add' %}">Add Photos</a></li>
+            </ul>
+        </div>
+        <div class="photo-wrapper">
+            <img src = "{{ pictures.picture.url }}" alt = "image" width="700" height="350">
+            <div class="context">
+                <h2>{{ pictures.title }}</h2>
+                <p>{{ pictures.description }}</p>
+                <h4>Uploaded on : {{ pictures.added_on }}</h4>
+            </div>
         </div>
 
     </div>
