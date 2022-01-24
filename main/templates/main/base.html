@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="screen-wrapper">
+        <div class="navbar">
+            <ul>
+                <li><a href="{% url 'main:homepage' %}">Home</a></li>
+                <li>
+                    <form action="{% url 'main:search' %}" method="POST">
+                        {% csrf_token %}
+                        <input type="text" class="search-bar" name="search" id="search_id" placeholder="Search photos here">
+                        <button type="submit" class="search-icon">🔍</button>
+                    </form>
+                </li>
+                <li><a href="{% url 'main:add' %}">Add Photos</a></li>
+            </ul>
+        </div>
+        {% block content %}{% endblock %}
+    </div>
+    
+</body>
+</html>

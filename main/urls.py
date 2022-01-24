@@ -11,5 +11,6 @@ urlpatterns = [
     path('', views.homePage, name="homepage"),
     path('add/', views.add, name="add"),
     path('gallery/<pk>/', views.detail, name="detail"),
+    path('search/', views.search, name="search")
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

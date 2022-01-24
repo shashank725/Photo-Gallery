@@ -87,6 +87,7 @@
     justify-content: center;
     background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.5));
     margin: 30px auto;
+    padding-bottom: 15px;
 }
 .photo-wrapper img{
     margin: 30px auto;
@@ -115,7 +116,7 @@
 /* Form Page */
 .form-wrapper{
     max-width: 60%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,4 +128,52 @@
     flex-direction: column;
     color: white;
     margin: 10px 30px;
+}
+
+
+/* Search page */
+
+.search-bar{
+    font-size: 21px;
+    padding:5px 10px;
+    border-radius: 5px; 
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+}
+
+.search-icon{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add Page  */
+
+.form-wrapper input{
+    font-size: 21px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+}
+
+.form-wrapper input[type="submit"] {
+    cursor: pointer;
+}
+
+.form-wrapper textarea{
+    font-size: 21px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+}
+
+#heading{
+    color: white;
+    text-align: center;
 }

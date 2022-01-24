@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="gallery-wrapper">
-    {% for picture in pictures %}
+    {% for picture in search_results %}
     <div class="gallery">
         <img src = "{{ picture.picture.url }}" alt = "image" width="300" height="200">
         <div class="caption">

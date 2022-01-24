@@ -1,7 +1,10 @@
+from multiprocessing import context
 from django.shortcuts import render, redirect
 
 from .models import Gallery
 from .forms import GalleryForm
+from django.db.models import Q 
+
 
 # Create your views here.
 
@@ -26,3 +29,11 @@ def add(request):
     form = GalleryForm()
     context = {'form':form}
     return render(request, 'main/add.html', context)
+
+def search(request):
+    query = request.POST.get('search')
+    search_results = Gallery.objects.filter(Q(title__icontains=query) | Q(description__icontains=query))
+    context = {
+        'search_results':search_results
+    }
+    return render(request, 'main/search.html', context)
